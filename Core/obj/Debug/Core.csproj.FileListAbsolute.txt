@@ -1,0 +1,5 @@
+H:\CNPM\Du An\ManageClinic\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+H:\CNPM\Du An\ManageClinic\Core\bin\Debug\Core.dll
+H:\CNPM\Du An\ManageClinic\Core\bin\Debug\Core.pdb
+H:\CNPM\Du An\ManageClinic\Core\obj\Debug\Core.dll
+H:\CNPM\Du An\ManageClinic\Core\obj\Debug\Core.pdb
