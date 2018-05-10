@@ -120,6 +120,7 @@
             this.btnQuanlytaikhoan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanlytaikhoan.ImageOptions.Image")));
             this.btnQuanlytaikhoan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuanlytaikhoan.ImageOptions.LargeImage")));
             this.btnQuanlytaikhoan.Name = "btnQuanlytaikhoan";
+            this.btnQuanlytaikhoan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanlytaikhoan_ItemClick);
             // 
             // btnQuanlynhanvien
             // 
@@ -155,6 +156,7 @@
             this.btnQuanlydichvu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanlydichvu.ImageOptions.Image")));
             this.btnQuanlydichvu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuanlydichvu.ImageOptions.LargeImage")));
             this.btnQuanlydichvu.Name = "btnQuanlydichvu";
+            this.btnQuanlydichvu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanlydichvu_ItemClick);
             // 
             // btnQuanlythuoc
             // 
@@ -163,6 +165,7 @@
             this.btnQuanlythuoc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanlythuoc.ImageOptions.Image")));
             this.btnQuanlythuoc.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuanlythuoc.ImageOptions.LargeImage")));
             this.btnQuanlythuoc.Name = "btnQuanlythuoc";
+            this.btnQuanlythuoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanlythuoc_ItemClick);
             // 
             // btnQuanlyhoadon
             // 
@@ -171,6 +174,7 @@
             this.btnQuanlyhoadon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanlyhoadon.ImageOptions.Image")));
             this.btnQuanlyhoadon.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnQuanlyhoadon.ImageOptions.LargeImage")));
             this.btnQuanlyhoadon.Name = "btnQuanlyhoadon";
+            this.btnQuanlyhoadon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanlyhoadon_ItemClick);
             // 
             // btnTKTKTaikhoan
             // 

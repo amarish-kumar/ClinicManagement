@@ -75,7 +75,7 @@
             this.gridcontrol1.Location = new System.Drawing.Point(0, 0);
             this.gridcontrol1.MainView = this.gridView1;
             this.gridcontrol1.Name = "gridcontrol1";
-            this.gridcontrol1.Size = new System.Drawing.Size(1085, 488);
+            this.gridcontrol1.Size = new System.Drawing.Size(1163, 488);
             this.gridcontrol1.TabIndex = 3;
             this.gridcontrol1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -115,7 +115,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 488);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1085, 262);
+            this.groupControl1.Size = new System.Drawing.Size(1163, 294);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Thông tin bệnh nhân";
             // 
@@ -124,7 +124,7 @@
             this.btnKetthuc.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKetthuc.Appearance.Options.UseFont = true;
             this.btnKetthuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKetthuc.ImageOptions.Image")));
-            this.btnKetthuc.Location = new System.Drawing.Point(857, 205);
+            this.btnKetthuc.Location = new System.Drawing.Point(854, 218);
             this.btnKetthuc.Name = "btnKetthuc";
             this.btnKetthuc.Size = new System.Drawing.Size(128, 40);
             this.btnKetthuc.TabIndex = 25;
@@ -136,7 +136,7 @@
             this.btnLammoi.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLammoi.Appearance.Options.UseFont = true;
             this.btnLammoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLammoi.ImageOptions.Image")));
-            this.btnLammoi.Location = new System.Drawing.Point(689, 205);
+            this.btnLammoi.Location = new System.Drawing.Point(686, 218);
             this.btnLammoi.Name = "btnLammoi";
             this.btnLammoi.Size = new System.Drawing.Size(128, 40);
             this.btnLammoi.TabIndex = 24;
@@ -148,7 +148,7 @@
             this.btnSua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Appearance.Options.UseFont = true;
             this.btnSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
-            this.btnSua.Location = new System.Drawing.Point(526, 205);
+            this.btnSua.Location = new System.Drawing.Point(518, 218);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(128, 40);
             this.btnSua.TabIndex = 23;
@@ -160,7 +160,7 @@
             this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Appearance.Options.UseFont = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(353, 205);
+            this.btnXoa.Location = new System.Drawing.Point(350, 218);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(128, 40);
             this.btnXoa.TabIndex = 22;
@@ -172,7 +172,7 @@
             this.btnThemmoi.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemmoi.Appearance.Options.UseFont = true;
             this.btnThemmoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThemmoi.ImageOptions.Image")));
-            this.btnThemmoi.Location = new System.Drawing.Point(183, 205);
+            this.btnThemmoi.Location = new System.Drawing.Point(182, 218);
             this.btnThemmoi.Name = "btnThemmoi";
             this.btnThemmoi.Size = new System.Drawing.Size(128, 40);
             this.btnThemmoi.TabIndex = 21;
@@ -182,7 +182,7 @@
             // dtNgaysinh
             // 
             this.dtNgaysinh.EditValue = null;
-            this.dtNgaysinh.Location = new System.Drawing.Point(232, 61);
+            this.dtNgaysinh.Location = new System.Drawing.Point(232, 73);
             this.dtNgaysinh.Name = "dtNgaysinh";
             this.dtNgaysinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNgaysinh.Properties.Appearance.Options.UseFont = true;
@@ -196,7 +196,7 @@
             // 
             // txtHovaten
             // 
-            this.txtHovaten.Location = new System.Drawing.Point(746, 15);
+            this.txtHovaten.Location = new System.Drawing.Point(746, 27);
             this.txtHovaten.Name = "txtHovaten";
             this.txtHovaten.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHovaten.Properties.Appearance.Options.UseFont = true;
@@ -205,7 +205,7 @@
             // 
             // txtSocmnd
             // 
-            this.txtSocmnd.Location = new System.Drawing.Point(746, 56);
+            this.txtSocmnd.Location = new System.Drawing.Point(746, 68);
             this.txtSocmnd.Name = "txtSocmnd";
             this.txtSocmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSocmnd.Properties.Appearance.Options.UseFont = true;
@@ -216,7 +216,7 @@
             // 
             // txtSodtthannhan
             // 
-            this.txtSodtthannhan.Location = new System.Drawing.Point(746, 153);
+            this.txtSodtthannhan.Location = new System.Drawing.Point(746, 165);
             this.txtSodtthannhan.Name = "txtSodtthannhan";
             this.txtSodtthannhan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSodtthannhan.Properties.Appearance.Options.UseFont = true;
@@ -227,7 +227,7 @@
             // 
             // txtHotenthannhan
             // 
-            this.txtHotenthannhan.Location = new System.Drawing.Point(746, 106);
+            this.txtHotenthannhan.Location = new System.Drawing.Point(746, 118);
             this.txtHotenthannhan.Name = "txtHotenthannhan";
             this.txtHotenthannhan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHotenthannhan.Properties.Appearance.Options.UseFont = true;
@@ -236,7 +236,7 @@
             // 
             // txtSodienthoai
             // 
-            this.txtSodienthoai.Location = new System.Drawing.Point(232, 153);
+            this.txtSodienthoai.Location = new System.Drawing.Point(232, 165);
             this.txtSodienthoai.Name = "txtSodienthoai";
             this.txtSodienthoai.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSodienthoai.Properties.Appearance.Options.UseFont = true;
@@ -247,7 +247,7 @@
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(232, 106);
+            this.txtDiachi.Location = new System.Drawing.Point(232, 118);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.Properties.Appearance.Options.UseFont = true;
@@ -256,7 +256,7 @@
             // 
             // txtMabenhnhan
             // 
-            this.txtMabenhnhan.Location = new System.Drawing.Point(232, 19);
+            this.txtMabenhnhan.Location = new System.Drawing.Point(232, 31);
             this.txtMabenhnhan.Name = "txtMabenhnhan";
             this.txtMabenhnhan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMabenhnhan.Properties.Appearance.Options.UseFont = true;
@@ -268,7 +268,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(605, 163);
+            this.labelControl6.Location = new System.Drawing.Point(605, 175);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(106, 19);
             this.labelControl6.TabIndex = 11;
@@ -278,7 +278,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(605, 63);
+            this.labelControl8.Location = new System.Drawing.Point(605, 75);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(67, 19);
             this.labelControl8.TabIndex = 10;
@@ -288,7 +288,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(605, 113);
+            this.labelControl5.Location = new System.Drawing.Point(605, 125);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(103, 19);
             this.labelControl5.TabIndex = 9;
@@ -298,7 +298,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(605, 21);
+            this.labelControl4.Location = new System.Drawing.Point(605, 33);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(68, 19);
             this.labelControl4.TabIndex = 8;
@@ -308,7 +308,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(125, 160);
+            this.labelControl7.Location = new System.Drawing.Point(125, 172);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(93, 19);
             this.labelControl7.TabIndex = 7;
@@ -318,7 +318,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(125, 113);
+            this.labelControl3.Location = new System.Drawing.Point(125, 125);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(48, 19);
             this.labelControl3.TabIndex = 6;
@@ -328,7 +328,7 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(125, 63);
+            this.labelControl2.Location = new System.Drawing.Point(125, 75);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(70, 19);
             this.labelControl2.TabIndex = 12;
@@ -338,7 +338,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(125, 21);
+            this.labelControl1.Location = new System.Drawing.Point(125, 33);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(100, 19);
             this.labelControl1.TabIndex = 5;
@@ -350,7 +350,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1085, 755);
+            this.ClientSize = new System.Drawing.Size(1163, 780);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridcontrol1);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
