@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhanVien));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -47,6 +48,7 @@
             this.dtNgayvaolam = new DevExpress.XtraEditors.DateEdit();
             this.dtNgaysinh = new DevExpress.XtraEditors.DateEdit();
             this.txtSodienthoai = new DevExpress.XtraEditors.TextEdit();
+            this.txtSocmnd = new DevExpress.XtraEditors.TextEdit();
             this.txtDiachi = new DevExpress.XtraEditors.TextEdit();
             this.txtHovaten = new DevExpress.XtraEditors.TextEdit();
             this.txtManhanvien = new DevExpress.XtraEditors.TextEdit();
@@ -54,12 +56,11 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.txtSocmnd = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableChucDanh)).BeginInit();
@@ -73,16 +74,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtNgaysinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgaysinh.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSodienthoai.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSocmnd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiachi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHovaten.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtManhanvien.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSocmnd.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(1);
+            gridLevelNode1.RelationName = "Level1";
+            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.gridControl1.Location = new System.Drawing.Point(0, 385);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -95,6 +99,7 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // tableChucDanh
@@ -226,6 +231,7 @@
             this.btnChucDanh.Size = new System.Drawing.Size(75, 31);
             this.btnChucDanh.TabIndex = 23;
             this.btnChucDanh.Text = "Thêm";
+            this.btnChucDanh.Click += new System.EventHandler(this.btnChucDanh_Click);
             // 
             // dtNgaynghilam
             // 
@@ -282,6 +288,15 @@
             this.txtSodienthoai.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
             this.txtSodienthoai.Size = new System.Drawing.Size(222, 26);
             this.txtSodienthoai.TabIndex = 19;
+            // 
+            // txtSocmnd
+            // 
+            this.txtSocmnd.Location = new System.Drawing.Point(264, 192);
+            this.txtSocmnd.Name = "txtSocmnd";
+            this.txtSocmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSocmnd.Properties.Appearance.Options.UseFont = true;
+            this.txtSocmnd.Size = new System.Drawing.Size(242, 26);
+            this.txtSocmnd.TabIndex = 18;
             // 
             // txtDiachi
             // 
@@ -350,6 +365,16 @@
             this.labelControl2.TabIndex = 11;
             this.labelControl2.Text = "Mã chức danh";
             // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl9.Appearance.Options.UseFont = true;
+            this.labelControl9.Location = new System.Drawing.Point(152, 199);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(67, 19);
+            this.labelControl9.TabIndex = 10;
+            this.labelControl9.Text = "Số CMND";
+            // 
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,25 +415,6 @@
             this.labelControl1.TabIndex = 8;
             this.labelControl1.Text = "Mã nhân viên";
             // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(152, 199);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(67, 19);
-            this.labelControl9.TabIndex = 10;
-            this.labelControl9.Text = "Số CMND";
-            // 
-            // txtSocmnd
-            // 
-            this.txtSocmnd.Location = new System.Drawing.Point(264, 192);
-            this.txtSocmnd.Name = "txtSocmnd";
-            this.txtSocmnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSocmnd.Properties.Appearance.Options.UseFont = true;
-            this.txtSocmnd.Size = new System.Drawing.Size(242, 26);
-            this.txtSocmnd.TabIndex = 18;
-            // 
             // FormNhanVien
             // 
             this.Appearance.Options.UseFont = true;
@@ -441,10 +447,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtNgaysinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgaysinh.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSodienthoai.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSocmnd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiachi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHovaten.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtManhanvien.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSocmnd.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

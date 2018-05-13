@@ -211,6 +211,7 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // FormChucDanh
@@ -224,6 +225,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormChucDanh";
             this.Text = "Chức danh";
+            this.Load += new System.EventHandler(this.FormChucDanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtMachucdanh.Properties)).EndInit();

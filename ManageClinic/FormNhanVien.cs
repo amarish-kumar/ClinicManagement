@@ -23,6 +23,7 @@ namespace ManageClinic
         {
             // TODO: This line of code loads data into the 'tableChucDanh.ChucDanh' table. You can move, or remove it, as needed.
             this.chucDanhTableAdapter.Fill(this.tableChucDanh.ChucDanh);
+            LoadFormNhanVien();
         }
         private BaseFunctions<NhanVien> nv = new BaseFunctions<NhanVien>();
 
@@ -50,7 +51,7 @@ namespace ManageClinic
         {
             NhanVien a = new NhanVien();
             a.MaNhanVien = (txtManhanvien.Text!="")?int.Parse(txtManhanvien.Text):-1;
-            a.MaChucDanh = int.Parse(cbbMachucdanh.ValueMember);
+            a.MaChucDanh = int.Parse(cbbMachucdanh.SelectedValue.ToString());
             a.HoVaTen = txtHovaten.Text;
             a.DiaChi = txtDiachi.Text;
             a.NgaySinh = DateTime.Parse(dtNgaysinh.Text);
@@ -64,6 +65,7 @@ namespace ManageClinic
         private void btnXoa_Click(object sender, EventArgs e)
         {
             nv.Delete(int.Parse(txtManhanvien.Text));
+            LoadFormNhanVien();
         }
 
         private void btnKetthuc_Click(object sender, EventArgs e)
@@ -96,7 +98,7 @@ namespace ManageClinic
             {
                 NhanVien a = (NhanVien)gridView1.GetRow(gridView1.GetSelectedRows()[0]);
                 txtManhanvien.Text = a.MaNhanVien.ToString();
-                cbbMachucdanh.ValueMember = a.MaChucDanh.ToString();
+                cbbMachucdanh.SelectedValue = a.MaChucDanh.ToString();
                 txtHovaten.Text = a.HoVaTen;
                 txtDiachi.Text = a.DiaChi;
                 txtSocmnd.Text = a.SoCMND;
@@ -106,5 +108,7 @@ namespace ManageClinic
                 txtSodienthoai.Text = a.SoDienThoai;
             }
         }
+
+    
     }
 }

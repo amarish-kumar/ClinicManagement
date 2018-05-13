@@ -72,5 +72,10 @@ namespace ManageClinic
         {
             this.Close();
         }
+
+        private void FormChucDanh_Load(object sender, EventArgs e)
+        {
+            LoadChucDanh();
+        }
     }
 }
