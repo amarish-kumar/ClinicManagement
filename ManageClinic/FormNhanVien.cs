@@ -50,7 +50,7 @@ namespace ManageClinic
         private NhanVien GetForm()
         {
             NhanVien a = new NhanVien();
-            a.MaNhanVien = (txtManhanvien.Text!="")?int.Parse(txtManhanvien.Text):-1;
+            a.MaNhanVien = (txtManhanvien.Text != "") ? int.Parse(txtManhanvien.Text) : -1;
             a.MaChucDanh = int.Parse(cbbMachucdanh.SelectedValue.ToString());
             a.HoVaTen = txtHovaten.Text;
             a.DiaChi = txtDiachi.Text;
@@ -92,9 +92,10 @@ namespace ManageClinic
             LoadFormNhanVien();
         }
 
+        // có 1 dòng thì không hiện lên control
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
-        {
-            if (gridView1.SelectedRowsCount>0)
+       {
+            if (gridView1.SelectedRowsCount > 0)
             {
                 NhanVien a = (NhanVien)gridView1.GetRow(gridView1.GetSelectedRows()[0]);
                 txtManhanvien.Text = a.MaNhanVien.ToString();
@@ -108,7 +109,63 @@ namespace ManageClinic
                 txtSodienthoai.Text = a.SoDienThoai;
             }
         }
+        private void TimKiem()
+        {
+            string key = txtKeyWord.text;
+            if (key=="")
+            {
+                gridControl1.DataSource = nv.SelectAll();
+            }
+            else
+            {
+                if (rdMaSo.Checked)
+                { 
+                    gridControl1.DataSource = nv.SelectBy(key, "ID");
+                }
+                else
+                {
+                    if (rdHoTen.Checked)
+                    {
+                        gridControl1.DataSource = nv.SelectBy(key, "HoTen");
+                    }
+                    else
+                    {
+                        
+                        gridControl1.DataSource = nv.SelectBy(key, "ChucDanh");
+                    }
+                }
+            }
+           
 
-    
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiem();
+        }
+
+        private void txtKeyWord_OnTextChange(object sender, EventArgs e)
+        {
+            
+            TimKiem();
+        }
+        private void KiemTraCheckChucDanh()
+        {
+            if (rdChucDanh.Checked)
+            {
+
+                cbbChucDanhTimKiem.Visible = true;
+            }
+            else
+            {
+                cbbChucDanhTimKiem.Visible = false;
+            }
+        }
+        private void rdChucDanh_CheckedChanged(object sender, EventArgs e)
+        {
+            KiemTraCheckChucDanh();
+        }
+
+       
     }
 }

@@ -657,3 +657,4 @@ H:\CNPM\Du An\ClinicManagement\ManageClinic\obj\Debug\ManageClinic.csproj.CoreCo
 H:\CNPM\Du An\ClinicManagement\ManageClinic\obj\Debug\ManageClinic.csproj.CopyComplete
 H:\CNPM\Du An\ClinicManagement\ManageClinic\obj\Debug\ManageClinic.exe
 H:\CNPM\Du An\ClinicManagement\ManageClinic\obj\Debug\ManageClinic.pdb
+H:\CNPM\Du An\ClinicManagement\ManageClinic\bin\Debug\Bunifu_UI_v1.5.3.dll

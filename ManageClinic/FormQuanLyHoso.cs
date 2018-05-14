@@ -32,7 +32,8 @@ namespace ManageClinic
         }
         private void LoadGridView()
         {
-            gridControl1.DataSource = a.SelectBy(cbbMaBN.SelectedValue,"MaBenhNhan");
+            //gridControl1.DataSource = a.SelectBy(cbbMaBN.SelectedValue,"MaBenhNhan");
+            gridControl1.DataSource = a.SelectAll();
         }
         private void SetThongTinBenhNhan()
         {
@@ -66,7 +67,15 @@ namespace ManageClinic
             ba.NgayKham =DateTime.Parse(dtNgaykham.Text);
             ba.TrieuChung = txtTrieuchung.Text;
             ba.KetLuan = txtketluan.Text;
-            ba.NgayTaiKham =DateTime.Parse(dtNgaytaikham.Text);
+            if (dtNgaytaikham.Text != "")
+            {
+                ba.NgayTaiKham = DateTime.Parse(dtNgaytaikham.Text);
+            }
+            else
+            {
+                ba.NgayTaiKham = ba.NgayKham;
+            }
+          
             ba.MaNhanVien = cbbBacSy.SelectedValue.ToString();
             ba.ManBenhNhan = cbbMaBN.SelectedValue.ToString();
             return ba;
@@ -75,7 +84,6 @@ namespace ManageClinic
         {
             BenhAn ba = new BenhAn();
             if (gridView1.SelectedRowsCount > 0)
-
             {
                 ba = (BenhAn)gridView1.GetRow(gridView1.GetSelectedRows()[0]);
                 this.txtMabenhan.Text = ba.MaBenhAn;
@@ -220,6 +228,33 @@ namespace ManageClinic
             FormChiTietDichVu frm = new FormChiTietDichVu();
             frm.Mahoadon = MaHoaDon;
             frm.ShowDialog();
+        }
+        private void TimKiem()
+        {
+            string key = txtKeyWord.text;
+            if (key == "")
+            {
+                gridControl1.DataSource = t.SelectAll();
+            }
+            else
+            {
+                if (rdMaSo.Checked)
+                {
+                    gridControl1.DataSource = t.SelectBy(key, "Ma");
+                }
+                else
+                {
+
+                    gridControl1.DataSource = t.SelectBy(key, "HoTen");
+
+                }
+            }
+
+
+        }
+        private void txtKeyWord_OnTextChange(object sender, EventArgs e)
+        {
+            TimKiem();
         }
     }
 }

@@ -75,7 +75,11 @@ namespace DataAccess
 
             return DataProvider.Instance.ExecuteNonQuery("Delete"+ this.GetTypeT(), ID);
         }
+        public int DeleteFrom(object ID)
+        {
 
+            return DataProvider.Instance.ExecuteNonQuery("Delete" + this.GetTypeT()+"FromBenhNhan", ID);
+        }
         public List<T> SelectBy(object item, string Name)
         {
             return CBO.FillCollection<T>(DataProvider.Instance.ExecuteReader( "GetBy" + Name + this.GetTypeT(), item));

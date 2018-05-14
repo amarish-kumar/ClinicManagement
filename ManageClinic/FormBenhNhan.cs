@@ -20,7 +20,7 @@ namespace ManageClinic
         }
         private int Dem { get; set; }
         private BaseFunctions<BenhNhan> t = new BaseFunctions<BenhNhan>();
-
+        private BaseFunctions<BenhAn> ba = new BaseFunctions<BenhAn>();
         private void FormBenhNhan_Load(object sender, EventArgs e)
         {
             gridcontrol1.DataSource = t.SelectAll();
@@ -80,7 +80,11 @@ namespace ManageClinic
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            // xóa bệnh án của bệnh nhân
+            ba.DeleteFrom(txtMabenhnhan.Text);
+            //xóa bệnh nhân
             t.Delete(txtMabenhnhan.Text);
+            
             gridcontrol1.DataSource = t.SelectAll();
         }
 
@@ -109,6 +113,38 @@ namespace ManageClinic
         private void btnKetthuc_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void TimKiem()
+        {
+            string key = txtKeyWord.text;
+            if (key == "")
+            {
+                gridcontrol1.DataSource = t.SelectAll();
+            }
+            else
+            {
+                if (rdMaSo.Checked)
+                {
+                    gridcontrol1.DataSource = t.SelectBy(key, "Ma");
+                }
+                else
+                {
+                  
+                        gridcontrol1.DataSource = t.SelectBy(key, "HoTen");
+                  
+                }
+            }
+
+
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiem();
+        }
+
+        private void txtKeyWord_OnTextChange(object sender, EventArgs e)
+        {
+            TimKiem();
         }
     }
 }
